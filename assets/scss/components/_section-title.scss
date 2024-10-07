@@ -1,0 +1,72 @@
+@use "../utils" as *;
+
+/*----------------------------------------*/
+/*  2.6 sectiontitle
+/*----------------------------------------*/
+// Section subtitle 1
+.rr-section {
+  &-title {
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    font-family: var(--tp-ff-bigshoulder);
+    color: #111214;
+    margin-bottom: 0;
+
+    &.fs-120 {
+      font-size: 120px;
+
+      @media #{$lg} {
+        font-size: 110px;
+      }
+      @media #{$md,$sm} {
+        font-size: 80px;
+      }
+      @media #{$xs} {
+        font-size: 55px;
+      }
+    }
+
+    @media #{$lg} {
+      font-size: 70px;
+    }
+
+    @media #{$sm} {
+      font-size: 62px;
+    }
+
+    @media #{$xs} {
+      font-size: 38px;
+    }
+
+    br {
+      @media #{$lg} {
+        display: none;
+      }
+    }
+  }
+
+  &-subtitle {
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.04em;
+    display: inline-block;
+    text-align: center;
+    color: #111214;
+    font-family: var(--tp-ff-aladin);
+  }
+}
+
+.tp-sb-slider-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 112%;
+  background: linear-gradient(90deg, #ff5a61 0%, #ff9c80 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 60px 0;
+  display: inline-block;
+  transform: translateX(-40px);
+}

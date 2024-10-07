@@ -1,0 +1,64 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  3.1 header-common
+/*----------------------------------------*/
+
+.rr-transparent {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	z-index: 9;
+}
+
+.rr-header {
+	&-area{
+		background-color: #040407;
+	}
+	&-mob-space {
+		@media #{$md,$sm,$xs} {
+			padding: 20px 0;
+		}
+	}
+
+	&-logo {
+		width: 157px;
+		height: 40px;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&-menu {
+		& nav {
+			& ul {
+				& li {
+					list-style-type: none;
+					display: inline-block;
+					margin-left: 40px;
+
+					@media #{$lg} {
+						margin: 0px 15px;
+					}
+
+					& a {
+						font-weight: 600;
+						font-size: 16px;
+						line-height: 1;
+						text-transform: uppercase;
+						text-align: center;
+						padding: 50px 0;
+						display: inline-block;
+						color: var(--rr-common-white);
+						font-family: var(--rr-ff-body);
+					}
+				}
+			}
+		}
+	}
+}

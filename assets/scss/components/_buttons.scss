@@ -1,0 +1,138 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  2.3 buttons
+/*----------------------------------------*/
+
+// Common button
+
+.rr-btn {
+    line-height: 42px;
+    padding: 0px 21.5px;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #111214;
+    display: inline-block;
+    font-family: var(--rr-ff-body);
+    background-color: var(--rr-common-white);
+
+    & span {
+        display: inline-block;
+    }
+
+    &.black-bg {
+        color: var(--rr-common-white);
+        background-color: var(--rr-common-black);
+
+        &:hover {
+            background-color: #e3ff04;
+            color: var(--rr-common-black);
+        }
+    }
+
+    &.yellow-bg {
+        background-color: #83CD20;
+        color: var(--rr-common-white);
+        padding: 3px 18px;
+        transition: .3s;
+
+        &:hover {
+            background-color: var(--rr-common-white);
+            color: #111214;
+
+            svg [fill="white"] {
+                fill: #111214;
+            }
+        }
+    }
+
+    &:hover {
+        color: #111214;
+        background-color: #83CD20;
+    }
+}
+
+.rr-demo-btn {
+    height: 44px;
+    line-height: 42px;
+    padding: 0px 20px;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0px 5px;
+    margin-bottom: 10px;
+    color: var(--rr-common-white);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    &.white-bg {
+        background-color: var(--rr-common-white);
+        color: var(--rr-common-black);
+
+        &:hover {
+            color: var(--rr-common-white);
+            background-color: var(--rr-common-black);
+            border-color: var(--rr-common-black);
+        }
+    }
+
+    &:hover {
+        color: var(--rr-common-white);
+        background-color: #83CD20;
+        border-color: #83CD20;
+    }
+}
+
+.rr-btn-2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    @include border-radius(4px);
+    color: var(--rr-common-white);
+    background-color: var(--rr-theme-primary);
+    font-family: var(--rr-ff-heading);
+    display: inline-flex;
+    align-items: center;
+    text-transform: capitalize;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 5;
+    padding: 15px 31.5px;
+
+    &::before {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(-165%, 0) rotate(0deg);
+        transform-origin: right bottom;
+        transition: all 0.35s;
+        z-index: -1;
+        content: "";
+    }
+
+    &:after {
+        display: block;
+        clear: both;
+        content: "";
+    }
+
+    &:hover {
+        color: var(--rr-common-white);
+        background: var(--rr-heading-primary);
+
+        &::before {
+            transform: translate(0, 0);
+        }
+
+        svg path[fill="#00160A"] {
+            fill: var(--rr-common-white);
+        }
+    }
+}

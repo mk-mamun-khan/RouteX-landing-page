@@ -1,0 +1,153 @@
+@use '../../utils' as *;
+
+
+.rr-hero {
+    &-height {
+        height: 1000px;
+
+        @media #{$lg,$md} {
+            height: 900px;
+        }
+
+        @media #{$sm} {
+            height: 700px;
+        }
+        @media #{$xs} {
+            height: 620px;
+        }
+    }
+
+    &-img {
+        img {
+            width: inherit;
+
+            @media #{$md,$sm,$xs} {
+                width: 100%;
+            }
+        }
+    }
+
+    &-title {
+        font-weight: 700;
+        font-size: 140px;
+        line-height: 100%;
+        text-align: center;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+        color: var(--rr-common-white);
+
+        @media #{$xxl} {
+            font-size: 137px;
+        }
+
+        @media #{$xl} {
+            font-size: 110px;
+        }
+
+        @media #{$lg} {
+            font-size: 90px;
+        }
+
+        @media #{$md} {
+            font-size: 69px;
+        }
+
+        @media #{$sm} {
+            font-size: 51px;
+        }
+        @media #{$xs} {
+            font-size: 29px;
+        }
+    }
+
+    &-content {
+        &-box {
+            padding-top: 190px;
+
+            & p {
+                font-weight: 400;
+                font-size: 20px;
+                color: rgba(255, 255, 255, 0.7);
+            }
+        }
+    }
+
+    &-inner {
+        &-1 {
+            position: absolute;
+            left: 0;
+            top: 74px;
+            z-index: -1;
+
+            @media #{$xxl} {
+                top: 80px;
+            }
+
+            @media #{$xl} {
+                left: -40px;
+                top: 134px;
+            }
+
+            @media #{$lg} {
+                left: -90px;
+            }
+        }
+
+        &-2 {
+            position: absolute;
+            right: 0;
+            top: 74px;
+            z-index: -1;
+
+            @media #{$xxl} {
+                top: 80px;
+            }
+
+            @media #{$xl} {
+                right: -40px;
+                top: 134px;
+            }
+
+            @media #{$lg} {
+                right: -90px;
+            }
+        }
+    }
+
+    &-star {
+        &-1 {
+            position: absolute;
+            bottom: 97%;
+            left: -12.5%;
+
+            @media #{$xxl} {
+                left: 2%;
+            }
+
+            @media #{$md} {
+                left: -2%;
+            }
+        }
+
+        &-2 {
+            position: absolute;
+            bottom: 93%;
+            right: 15%;
+            -webkit-animation: animationglob 50s cubic-bezier(1, 0.99, 0.03, 0.01) infinite;
+            animation: animationglob 4s cubic-bezier(1, 0.99, 0.03, 0.01) infinite;
+
+            @media #{$lg} {
+                bottom: 105%;
+            }
+
+            @media #{$md} {
+                right: -1%;
+            }
+
+            @media #{$xs} {
+                bottom: 112%;
+                right: 10%;
+            }
+        }
+    }
+}

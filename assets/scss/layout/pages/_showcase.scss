@@ -1,0 +1,63 @@
+@use '../../utils' as *;
+
+
+.rr-showcase {
+    &-img {
+        margin-bottom: 30px;
+
+        img {
+            @media #{$lg} {
+                width: inherit;
+            }
+        }
+    }
+
+    &-bottom-img {
+        img {
+            width: inherit;
+        }
+    }
+
+    &-title {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 1;
+        letter-spacing: -0.01em;
+        text-transform: uppercase;
+        color: var(--rr-common-black);
+        font-family: var(--rr-ff-syne);
+    }
+
+    &-big-text {
+        & h3 {
+            font-weight: 700;
+            font-size: 350px;
+            line-height: 1;
+            text-transform: uppercase;
+            color: rgba(33, 35, 41, 0.06);
+            margin-bottom: -143px;
+            margin-left: -104px;
+            margin-right: -104px;
+
+            @media #{$xl} {
+                font-size: 234px;
+                margin-bottom: -120px;
+            }
+
+            @media #{$lg} {
+                font-size: 200px;
+                margin-bottom: -80px;
+            }
+
+            @media #{$md} {
+                font-size: 162px;
+                margin-bottom: -60px;
+            }
+        }
+    }
+
+    &-active {
+        margin: 0px -150px;
+        margin-bottom: 90px;
+    }
+}
