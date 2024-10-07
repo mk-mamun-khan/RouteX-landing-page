@@ -5569,7 +5569,8 @@ body .ui-tooltip {
 }
 @media (max-width: 575px) {
   .rr-demo-text-wrap {
-    left: 16%;
+    left: 10%;
+    top: -30%;
   }
 }
 .rr-demo-item.demo-item-5 {
@@ -6114,7 +6115,6 @@ body .ui-tooltip {
 
 @media (max-width: 575px) {
   .rr-responsive-area {
-    padding-top: 100px;
     padding-bottom: 70px;
   }
 }

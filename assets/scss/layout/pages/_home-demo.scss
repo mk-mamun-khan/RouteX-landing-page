@@ -15,7 +15,8 @@
     }
 
     @media #{$xs} {
-      left: 16%;
+      left: 10%;
+      top: -30%;
     }
   }
 
@@ -607,7 +608,6 @@
 
 .rr-responsive-area {
   @media #{$xs} {
-    padding-top: 100px;
     padding-bottom: 70px;
   }
 
