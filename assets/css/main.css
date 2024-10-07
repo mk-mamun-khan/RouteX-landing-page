@@ -1704,7 +1704,7 @@ input[type=date i]::-webkit-calendar-picker-indicator {
   font-weight: 800;
   font-size: 80px;
   line-height: 1.1;
-  letter-spacing: -0.01em;
+  letter-spacing: 0.01em;
   color: #111214;
   margin-bottom: 0;
 }
