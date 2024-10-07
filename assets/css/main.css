@@ -5879,6 +5879,12 @@ body .ui-tooltip {
     left: 20%;
   }
 }
+@media (max-width: 575px) {
+  .rr-footer-bg-shape {
+    left: -1%;
+    top: 48%;
+  }
+}
 .rr-footer-bg-shape img {
   width: inherit;
 }

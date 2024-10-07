@@ -360,6 +360,11 @@
       left: 20%;
     }
 
+    @media #{$xs} {
+      left: -1%;
+      top: 48%;
+    }
+
     img {
       width: inherit;
     }
