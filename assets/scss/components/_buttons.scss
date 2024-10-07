@@ -8,13 +8,15 @@
 
 .rr-btn {
     line-height: 42px;
-    padding: 0px 21.5px;
+    padding: 0px 24px;
     font-weight: 600;
     font-size: 16px;
     text-align: center;
     text-transform: uppercase;
     color: #111214;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
     font-family: var(--rr-ff-body);
     background-color: var(--rr-common-white);
 
@@ -49,8 +51,12 @@
     }
 
     &:hover {
-        color: #111214;
+        color: var(--rr-common-white);
         background-color: #83CD20;
+
+        svg [fill="currentcolor"] {
+            fill: var(--rr-common-white);
+        }
     }
 }
 

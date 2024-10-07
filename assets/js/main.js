@@ -1321,6 +1321,40 @@
         },
     });
 
+    /*======================================
+ client-feedback__activ js
+ ========================================*/
+    var swiperTesti = new Swiper(".testi-carousel-2", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        centerMode: true,
+        loop: true,
+        autoplay: true,
+        grabcursor: true,
+        speed: 600,
+        grabcursor: true,
+        pagination: {
+            el: ".testimonial-section-3-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+                spaceBetween: 30,
+            },
+            767: {
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+                spaceBetween: 30,
+            },
+            1024: {
+                slidesPerView: 2,
+                slidesPerGroup: 1,
+            },
+        },
+    });
+
     if ($('.rr-inner-img-wrap').length > 0) {
         // inner-page-animation
         let t1 = gsap.timeline({

@@ -1125,13 +1125,15 @@ input[type=date i]::-webkit-calendar-picker-indicator {
 /*----------------------------------------*/
 .rr-btn {
   line-height: 42px;
-  padding: 0px 21.5px;
+  padding: 0px 24px;
   font-weight: 600;
   font-size: 16px;
   text-align: center;
   text-transform: uppercase;
   color: #111214;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   font-family: var(--rr-ff-body);
   background-color: var(--rr-common-white);
 }
@@ -1160,8 +1162,11 @@ input[type=date i]::-webkit-calendar-picker-indicator {
   fill: #111214;
 }
 .rr-btn:hover {
-  color: #111214;
+  color: var(--rr-common-white);
   background-color: #83CD20;
+}
+.rr-btn:hover svg [fill=currentcolor] {
+  fill: var(--rr-common-white);
 }
 
 .rr-demo-btn {
@@ -1700,7 +1705,6 @@ input[type=date i]::-webkit-calendar-picker-indicator {
   font-size: 80px;
   line-height: 1.1;
   letter-spacing: -0.01em;
-  font-family: var(--tp-ff-bigshoulder);
   color: #111214;
   margin-bottom: 0;
 }
@@ -1749,7 +1753,8 @@ input[type=date i]::-webkit-calendar-picker-indicator {
   display: inline-block;
   text-align: center;
   color: #111214;
-  font-family: var(--tp-ff-aladin);
+  position: relative;
+  z-index: 2;
 }
 
 .tp-sb-slider-title {
@@ -4685,6 +4690,9 @@ body .ui-tooltip {
   color: var(--rr-common-white);
   font-family: var(--rr-ff-body);
 }
+.rr-header-menu nav ul li a:hover {
+  color: #83CD20;
+}
 
 /*----------------------------------------*/
 /*  4.2 Menu
@@ -5551,8 +5559,8 @@ body .ui-tooltip {
 /*----------------------------------------*/
 .rr-demo-text-wrap {
   position: absolute;
-  top: -32%;
-  left: 34%;
+  top: -55%;
+  left: 31%;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .rr-demo-text-wrap {
@@ -6325,6 +6333,57 @@ body .ui-tooltip {
 .rr-showcase-active {
   margin: 0px -150px;
   margin-bottom: 90px;
+}
+
+.testi-item-2 {
+  background: var(--rr-common-white);
+  border: 1px solid #E6E6E6;
+  box-shadow: 0px 14px 68px #E8E8E8;
+  border-radius: 15px;
+  padding: 40px;
+  position: relative;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .testi-item-2 {
+    padding: 30px 20px;
+  }
+}
+.testi-item-2 .testi-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #eaeaea;
+  flex-wrap: wrap;
+  row-gap: 15px;
+}
+.testi-item-2 .testi-top .testi-author {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 60px 1fr;
+  grid-gap: 15px;
+}
+.testi-item-2 .testi-top .testi-author .name {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.testi-item-2 .testi-top .testi-author .name span {
+  display: block;
+  font-family: var(--rr-ff-body);
+  font-size: 14px;
+  color: var(--rr-text-body);
+  font-weight: 400;
+  margin-top: -15px;
+}
+.testi-item-2 .testi-top .review li {
+  display: inline-flex;
+  color: #FFB930;
+}
+.testi-item-2 p {
+  font-weight: 500;
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -7,8 +7,8 @@
 .rr-demo {
   &-text-wrap {
     position: absolute;
-    top: -32%;
-    left: 34%;
+    top: -55%;
+    left: 31%;
 
     @media #{$md} {
       left: 20%;
@@ -456,6 +456,7 @@
       @media #{$md} {
         padding-bottom: 0px;
       }
+
       @media #{$sm,$xs} {
         padding: 0px;
         padding-bottom: 0px;
