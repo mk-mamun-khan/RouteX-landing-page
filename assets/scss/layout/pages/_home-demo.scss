@@ -179,13 +179,25 @@
 .rr-responsive {
   &-area {
     border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+
+    @media #{$md,$sm,$xs} {
+      border-bottom: none;
+    }
   }
 
-  &-mockup img {
-    width: inherit;
+  &-mockup {
+    img {
+      width: inherit;
 
-    @media #{$sm,$xs} {
-      width: 100%;
+      @media #{$sm,$xs} {
+        width: 100%;
+      }
+    }
+
+    & .mockup-1 {
+      @media #{$md} {
+        width: 100%;
+      }
     }
   }
 
@@ -254,7 +266,7 @@
       background: rgba(33, 35, 41, 0.1);
       content: '';
 
-      @media #{$md,$xs} {
+      @media #{$md,$sm,$xs} {
         display: none;
       }
     }
@@ -334,9 +346,15 @@
     @media #{$xl} {
       left: 35%;
     }
+
     @media #{$lg} {
       left: 30%;
     }
+
+    @media #{$md} {
+      left: 28%;
+    }
+
     @media #{$sm} {
       left: 20%;
     }
@@ -401,10 +419,18 @@
 
   &-border {
     border-bottom: 1px solid #e5e5e5;
+
+    @media #{$sm,$xs} {
+      border-bottom: none;
+    }
   }
 
   &-border-right {
     border-right: 1px solid #e5e5e5;
+
+    @media #{$md,$sm,$xs} {
+      border-right: none;
+    }
   }
 
   &-slider {
@@ -427,6 +453,9 @@
         padding-bottom: 100px;
       }
 
+      @media #{$md} {
+        padding-bottom: 0px;
+      }
       @media #{$sm,$xs} {
         padding: 0px;
         padding-bottom: 0px;
@@ -447,7 +476,8 @@
 
       @media #{$sm,$xs} {
         transform: translateX(0px);
-        padding: 40px 0;
+        padding: 0px 0;
+        margin: 40px 0;
       }
     }
 

@@ -169,8 +169,18 @@
   }
 }
 
-.rr-feature-img img {
-  width: 100%;
+.rr-feature-img {
+  img {
+    width: 100%;
+  }
+
+  &-2 {
+    img {
+      @media #{$xs} {
+        width: 140% !important;
+      }
+    }
+  }
 }
 
 .slide-transtion {
